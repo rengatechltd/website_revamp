@@ -2804,13 +2804,13 @@ a.header__search.header-search-btn p {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  transition: all 0.4s;
+  t;ransition: all 0.4s;
   border: none;
 }
 .theme-btn1::after {
   content: "";
   position: absolute;
-  background-image: url(../img/icons/button-img.png);
+  background-image: url(../img/logo/cropped-favicon.fw_-32x32.png);
   height: 100%;
   width: 0%;
   top: 0;
@@ -2860,7 +2860,7 @@ a.header__search.header-search-btn p {
 .cta-btn1::after {
   content: "";
   position: absolute;
-  background-image: url(../img/icons/button-img.png);
+  background-image: url(../img/logo/cropped-favicon.fw_-32x32.png);
   height: 100%;
   width: 0%;
   top: 0;
@@ -2916,7 +2916,7 @@ a.header__search.header-search-btn p {
 .cta-btn2::after {
   content: "";
   position: absolute;
-  background-image: url(../img/icons/button-img.png);
+  background-image: url(../img/logo/cropped-favicon.fw_-32x32.png);
   height: 100%;
   width: 0%;
   top: 0;

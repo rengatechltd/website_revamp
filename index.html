@@ -98,10 +98,10 @@
 
               <div class="main-menu-ex main-menu-ex1">
                 <ul id="list-example">
-                  <li><a class="list-group-item list-group-item-action" href="#home">Home</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="#about">About</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="#service">Our Services</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="contact.html">Contact Us</a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#home">Home // Accueil</a></li>
+                  <li><a data-translatable  class="list-group-item list-group-item-action" href="#about">About // À propos </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#service">Our Services // Nos Services </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="contact.html">Contact Us // Contactez-nous</a></li>
                 </ul>
               </div>
 
@@ -113,13 +113,13 @@
                     <img src="assets/img/icons/header1-icon.png" alt="">
                   </div>
                   <div class="headding">
-                    <p>Make a Call</p>
+                    <p data-translatable >Make a Call // Passer un appel</p>
                     <a href="#">+254 777 011211 </a>
                   </div>
                 </div>
 
                 <div class="button">
-                  <a class="theme-btn1" href="contact.html">Book A Demo <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a data-translatable class="theme-btn1" href="contact.html">Book A Demo <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
 
                 <div class="button">
@@ -129,10 +129,10 @@
                 <ul id="list-example">
                   <li>
                   <li class="has-dropdown">
-                      <a href="#">English <i class="fa-solid fa-angle-down"></i></a>
+                      <a>Set Language <i class="fa-solid fa-angle-down"></i></a>
                       <ul class="sub-menu">
-                        <li><a href="project-details-left.html">Fench</a></li>
-                        <li><a href="project-details-left.html">Hindi</a></li>
+                        <li><a  id="en-btn">English</a></li>
+                        <li><a id="fr-btn">Fench</a></li>
                       </ul>
                     </li>
                   </li>
@@ -1542,6 +1542,28 @@
   <script src="assets/js/jquery.lineProgressbar.js"></script>
   <script src="assets/js/ripple-btn.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/dom-i18n.min.js"></script>
+
+  <script>
+    var enButton = document.getElementById('en-btn');
+    var frButton = document.getElementById('fr-btn');
+    var i18n = domI18n({
+      selector: '[data-translatable]',
+      separator: ' // ',
+      languages: ['en', 'fr'],
+      defaultLanguage: 'en'
+    });
+
+    enButton.onclick = function () {
+      i18n.changeLanguage('en');
+    };
+
+    frButton.onclick = function () {
+      i18n.changeLanguage('fr');
+    };
+
+  </script>
+
 </body>
 
 </html>

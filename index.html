@@ -88,6 +88,7 @@
         <div class="row">
           <div class="col-12">
             <div class="header-elements">
+
               <div class="site-logo">
                 <a href="index.html">
                   <img src="assets/img/logo/Renga-Logo-FinalX1.fw_.png" alt="">
@@ -97,12 +98,11 @@
 
               <div class="main-menu-ex main-menu-ex1">
                 <ul id="list-example">
-                  <li><a class="list-group-item list-group-item-action" href="#home">Home</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="#about">About</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="#service">Our Services</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="contact.html">Contact Us</a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#home">Home // Accueil</a></li>
+                  <li><a data-translatable  class="list-group-item list-group-item-action" href="#about">About // À propos </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#service">Our Services // Nos Services </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="contact.html">Contact Us // Contactez-nous</a></li>
                 </ul>
-
               </div>
 
 
@@ -113,14 +113,34 @@
                     <img src="assets/img/icons/header1-icon.png" alt="">
                   </div>
                   <div class="headding">
-                    <p>Make a Call</p>
+                    <p data-translatable >Make a Call // Passer un appel</p>
                     <a href="#">+254 777 011211 </a>
                   </div>
                 </div>
+
                 <div class="button">
-                  <a class="theme-btn1" href="contact.html">Book A Demo <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a data-translatable class="theme-btn1" href="contact.html">Book A Demo <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
+
+                <div class="button">
+
+
+              <div class="main-menu-ex main-menu-ex1">
+                <ul id="list-example">
+                  <li>
+                  <li class="has-dropdown">
+                      <a>Set Language <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li><a  id="en-btn">English</a></li>
+                        <li><a id="fr-btn">Fench</a></li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
            </div>
+
 
             </div>
           </div>
@@ -614,7 +634,7 @@
               <div class="heading1">
                 <h4><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions</a></h4>
                 <div class="space16"></div>
-                <p>You need a fast, agile integrated business solution platform to drive your supply chain, whether you operate a central distribution centre, a network of showrooms, an internet-trading hub or a telesales function. You need powerful, versatile software to enable competitive pricing and responsive enterprise solution./p>
+                <p>You need a fast, agile integrated business solution platform to drive your supply chain, whether you operate a central distribution centre, a network of showrooms, an internet-trading hub or a telesales function. You need powerful, versatile software to enable competitive pricing and responsive enterprise solution.</p>
                 <div class="space16"></div>
                 <a href="enterprise-business-solutions-service.html" class="learn">Learn More <span><i
                       class="fa-solid fa-arrow-right"></i></span></a>
@@ -1370,7 +1390,7 @@
 
         <div class="col-lg-5">
           <div class="buttons">
-            <a class="cta-btn1" href="#">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <a class="cta-btn1" href="contact.html">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
             <!-- <a class="cta-btn2" href="#">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
           </div>
         </div>
@@ -1522,6 +1542,28 @@
   <script src="assets/js/jquery.lineProgressbar.js"></script>
   <script src="assets/js/ripple-btn.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/dom-i18n.min.js"></script>
+
+  <script>
+    var enButton = document.getElementById('en-btn');
+    var frButton = document.getElementById('fr-btn');
+    var i18n = domI18n({
+      selector: '[data-translatable]',
+      separator: ' // ',
+      languages: ['en', 'fr'],
+      defaultLanguage: 'en'
+    });
+
+    enButton.onclick = function () {
+      i18n.changeLanguage('en');
+    };
+
+    frButton.onclick = function () {
+      i18n.changeLanguage('fr');
+    };
+
+  </script>
+
 </body>
 
 </html>

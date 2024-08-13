@@ -137,7 +137,7 @@
                     </li> -->
                   
 
-                  <select class="form-select" aria-label="Default select example">
+                  <select id="language-selector" class="form-select" aria-label="Default select example">
                     <option id="en-btn" selected>English</option>
                     <option id="fr-btn" value="2">French</option>
                   </select>
@@ -1655,26 +1655,7 @@
   <script src="assets/js/ripple-btn.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/dom-i18n.min.js"></script>
-
-  <script>
-    var enButton = document.getElementById('en-btn');
-    var frButton = document.getElementById('fr-btn');
-    var i18n = domI18n({
-      selector: '[data-translatable]',
-      separator: ' // ',
-      languages: ['en', 'fr'],
-      defaultLanguage: 'en'
-    });
-
-    enButton.onclick = function () {
-      i18n.changeLanguage('en');
-    };
-
-    frButton.onclick = function () {
-      i18n.changeLanguage('fr');
-    };
-
-  </script>
+  <script src="assets/js/changeLanguage.js"></script>
 
 </body>
 

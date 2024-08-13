@@ -3,7 +3,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact Us</title>
+     <title data-translatable>Contact Us // Contactez-nous</title>
 
      <!--=====FAB ICON=======-->
      <link rel="shortcut icon" href="assets/img/logo/cropped-favicon.fw_-32x32.png" type="image/x-icon">
@@ -172,10 +172,10 @@
     <div class="mobile-nav">
 
       <ul>
-        <li class="has-dropdown"><a href="/">Home </a>
+        <li class="has-dropdown"><a data-translatable href="/">Home // Accueil </a>
           
         </li>
-        <li><a href="#about">About Us</a></li>
+        <li><a data-translatable href="#about">About Us // À propos de nous</a></li>
         <li class="has-dropdown"><a href="#">Our Services</a>
           <ul class="sub-menu">
             <li><a data-translatable href="it-consultancy-service.html">IT Consultancy // Conseil en informatique</a></li>
@@ -271,7 +271,7 @@
                             <div class="row align-items-center text-center">
                               <div class="col-lg-8 m-auto">
                                 <div class="main-heading">
-                                  <h1>Contact Us</h1>
+                                  <h1 data-translatable>Contact Us // Contactez-nous</h1>
                                     <div class="space16"></div>
                                 </div>
                               </div>
@@ -294,7 +294,7 @@
                 <div class="col-lg-4">
                   <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Uganda Office</h5>
+                      <h5 data-translatable class="card-title">Uganda Office // Uganda Bureau</h5>
                       <p class="card-text">Plot 4, Kyadondo Road
                   Nakasero Trust Tower, 9th Floor,
                   Kampala, Uganda.</p>
@@ -372,16 +372,16 @@
                     <div class="col-lg-6">
                         <div class="contact-boxs">
                             <div class="heading1">
-                                <h2>Contact Information</h2>
+                                <h2 data-translatable>Contact Information // Coordonnées</h2>
                                 <div class="space16"></div>
-                                <p>We’ve grown up with the internet revolution, and we <br> know how to deliver on its</p>
+                                <p data-translatable>Laissez-nous aider votre entreprise technologique à aller de l’avant.</p>
                             </div>
                             <div class="contact-box">
                                 <div class="icon">
                                     <img src="assets/img/icons/contact-page-icon1.png" alt="">
                                 </div>
                                 <div class="heading">
-                                    <h5>Contact Us</h5>
+                                    <h5 data-translatable>Call Us // Appelez-nous</h5>
                                     <a href="tel:(254)777-011211" class="text">(254) 777-011211</a>
                                 </div>
                             </div>
@@ -391,7 +391,7 @@
                                     <img src="assets/img/icons/contact-page-icon2.png" alt="">
                                 </div>
                                 <div class="heading">
-                                    <h5>Send Us a Mail</h5>
+                                    <h5 data-translatable>Send Us a Mail // Envoyez-nous un courrier</h5>
                                     <a href="mailto:info@renga.tech" class="text">info@renga.tech </a>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@
                                     <img src="assets/img/icons/contact-page-icon3.png" alt="">
                                 </div>
                                 <div class="heading">
-                                    <h5>Head Office Location</h5>
+                                    <h5 data-translatable>Head Office Location // Emplacement du siège social</h5>
                                     <a href="tel:(124)555-6565" class="text"> Suite No.4, 2nd Floor, Mayfair Suites, Parklands Road  <br> P. O Box 38158-00623, Nairobi, Kenya</a>
                                 </div>
                             </div>
@@ -449,7 +449,7 @@
                                     </div>
 
                                     <div class="col-lg-12">
-                                        <button class="theme-btn1">Send Message <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                                        <button  class="theme-btn1"><span data-translatable>Send Message // Envoyer un message </span><span><i class="fa-solid fa-arrow-right"></i></span></button>
                                     </div>
 
                                 </div>
@@ -647,27 +647,7 @@
   <script src="assets/js/ripple-btn.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/dom-i18n.min.js"></script>
-
-  <script>
-    var enButton = document.getElementById('en-btn');
-    var frButton = document.getElementById('fr-btn');
-    var i18n = domI18n({
-      selector: '[data-translatable]',
-      separator: ' // ',
-      languages: ['en', 'fr'],
-      defaultLanguage: 'en'
-    });
-
-    enButton.onclick = function () {
-      i18n.changeLanguage('en');
-    };
-
-    frButton.onclick = function () {
-      i18n.changeLanguage('fr');
-    };
-
-  </script>
-
+  <script src="assets/js/changeLanguage.js"></script>
 </body>
 
 </html>

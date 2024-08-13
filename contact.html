@@ -64,6 +64,7 @@
     
     
 
+
   <!--=====HEADER START=======-->
   <header>
     <div class="header-area header-area1 header-area-all d-none d-lg-block" id="header">
@@ -71,6 +72,7 @@
         <div class="row">
           <div class="col-12">
             <div class="header-elements">
+
               <div class="site-logo">
                 <a href="index.html">
                   <img src="assets/img/logo/Renga-Logo-FinalX1.fw_.png" alt="">
@@ -80,12 +82,11 @@
 
               <div class="main-menu-ex main-menu-ex1">
                 <ul id="list-example">
-                  <li><a class="list-group-item list-group-item-action" href="index.html">Home</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="index.html#about">About</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="index.html#service">Our Services</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="contact.html">Contact Us</a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#home">Home // Accueil</a></li>
+                  <li><a data-translatable  class="list-group-item list-group-item-action" href="#about">About // À propos </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="#service">Our Services // Nos Services </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="contact.html">Contact Us // Contactez-nous</a></li>
                 </ul>
-
               </div>
 
 
@@ -96,14 +97,46 @@
                     <img src="assets/img/icons/header1-icon.png" alt="">
                   </div>
                   <div class="headding">
-                    <p>Make a Call</p>
+                    <p data-translatable >Make a Call // Passer un appel</p>
                     <a href="#">+254 777 011211 </a>
                   </div>
                 </div>
+
                 <div class="button">
-                  <a class="theme-btn1" href="contact.html">Book A Demo <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="theme-btn1" href="contact.html"><span data-translatable> Talk to Us // Parlez-nous</span> <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
+
+                <div class="button">
+
+
+              <div class="main-menu-ex main-menu-ex1">
+                <ul id="list-example">
+                  <li>
+                  <li class="has-dropdown">
+                      <!-- <a>Set Language <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li><a  id="en-btn">English</a></li>
+                        <li><a id="fr-btn">Fench</a></li>
+                      </ul>
+                    </li> -->
+                  
+
+                  <select class="form-select" aria-label="Default select example">
+                    <option id="en-btn" selected>English</option>
+                    <option id="fr-btn" value="2">French</option>
+                  </select>
+                  </li>
+
+                  <!-- <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose Language</option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                  </select> -->
+                </ul>
+              </div>
+            </div>
            </div>
+
 
             </div>
           </div>
@@ -112,7 +145,7 @@
     </div>
   </header>
   <!--=====HEADER END=======-->
-       
+
   <!--=====Mobile header start=======-->
   <div class="mobile-header d-block d-lg-none ">
     <div class="container-fluid">
@@ -145,17 +178,47 @@
         <li><a href="#about">About Us</a></li>
         <li class="has-dropdown"><a href="#">Our Services</a>
           <ul class="sub-menu">
-            <li><a href="it-consultancy-service.html">IT Consultancy</a></li>
-            <li><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions</a></li>
-            <li><a href="it-infrastructure-service.html">IT Infrastructure and Security</a></li>
-            <li><a href="app-development-service-details.html">App Development</a></li>
-            <li><a href="security-solutions-service.html">Security Solutions</a></li>
+            <li><a data-translatable href="it-consultancy-service.html">IT Consultancy // Conseil en informatique</a></li>
+            <li><a data-translatable href="enterprise-business-solutions-service.html">Enterprise Business Solutions // Solutions d'entreprise</a></li>
+            <li><a data-translatable href="it-infrastructure-service.html">IT Infrastructure and Security //Infrastructure informatique et sécurité </a></li>
+            <li><a data-translatable href="app-development-service-details.html">App Development // Développement d'applications</a></li>
+            <li><a data-translatable href="security-solutions-service.html">Security Solutions // Solutions de sécurité</a></li>
           </ul>
         </li>
+
+        <!-- <li class="has-dropdown"><a href="#">Pages</a>
+          <ul class="sub-menu">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="testimonial.html">Testimonial</a></li>
+            <li><a href="error.html">404</a></li>
+          </ul>
+        </li> -->
+
+
+
+        <!-- <li class="has-dropdown"><a href="#">Blog</a>
+          <ul class="sub-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog-details-left.html">Details Left</a></li>
+            <li><a href="blog-details-right.html">Details Right</a></li>
+            <li><a href="blog-details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown"><a href="#">Project</a>
+          <ul class="sub-menu">
+            <li><a href="project.html">Project</a></li>
+            <li><a href="project-details-left.html">Project Left</a></li>
+            <li><a href="project-details-right.html">Project Right</a></li>
+            <li><a href="project-details.html">Project Details</a></li>
+          </ul>
+        </li> -->
+
       </ul>
 
       <div class="single-footer-items">
-        <h3>Contact Us</h3>
+        <h3 data-translatable>Contact Us // Contactez-nous</h3>
 
         <div class="contact-box">
           <div class="icon">
@@ -187,7 +250,7 @@
       </div>
 
       <div class="contact-infos">
-        <h3>Our Location</h3>
+        <h3 data-translatable> Our Location // Notre emplacement</h3>
             <ul class="social-icon">
               <li><a href="https://mw.linkedin.com/company/rengatechnologies"><i
                     class="fa-brands fa-linkedin-in"></i></a></li>
@@ -412,15 +475,21 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="heading1-w">
-            <h2 class="title tg-element-title"> At Renga, we believe in an IT Solution that is tailored to your business needs. </h2>
+            <h2 data-translatable class="title tg-element-title"> At Renga, we
+            believe in an IT Solution that is tailored to your business needs.
+            // Chez Renga, nous croyons en une solution informatique adaptée aux
+            besoins de votre entreprise. </h2>
             <div class="space16"></div>
-            <p data-aos="fade-right" data-aos-duration="700"> Talk to us and find out how our SaaS services can impact your business. </p>
+            <p data-translatable data-aos="fade-right" data-aos-duration="700">
+            Talk to us and find out how our SaaS services can impact your
+            business. //  Parlez-nous et découvrez comment nos services SaaS
+            peuvent impacter votre entreprise.</p>
           </div>
         </div>
 
         <div class="col-lg-5">
           <div class="buttons">
-            <a class="cta-btn1" href="#">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <a class="cta-btn1" href="contact.html"> <span data-translatable>Contact Us // Contactez-nous</span> <span><i class="fa-solid fa-arrow-right"></i></span> </a>
             <!-- <a class="cta-btn2" href="#">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
           </div>
         </div>
@@ -442,8 +511,13 @@
             </div>
             <div class="space20"></div>
             <div class="heading1">
-              <p>RENGA focusses on offering solutions around Consulting, Mobility & Digital Transformation, Software
-                Development, IT Infrastructure and IT Security.</p>
+              <p data-translatable>RENGA focusses on offering solutions around
+              Consulting, Mobility & Digital Transformation, Software
+                Development, IT Infrastructure and IT Security. // RENGA vous
+                propose des solutions autour du conseil, de la mobilité et de la
+                transformation numérique, du développement logiciel, de
+                l'infrastructure informatique et de la sécurité informatique.
+                </p>
             </div>
             <ul class="social-icon">
               <li><a href="https://mw.linkedin.com/company/rengatechnologies"><i
@@ -456,29 +530,29 @@
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Service We Offer</h3>
+            <h3 data-translatable>Service We Offer // Services Que Nous Offrons </h3>
 
 
             <ul class="menu-list">
-              <li><a href="it-consultancy-service.html">IT Consultancy</a></li>
-              <li><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions</a></li>
-              <li><a href="it-infrastructure-service.html">IT Infrastructure and Security</a></li>
-              <li><a href="app-development-service-details.html">App Development</a></li>
-              <li><a href="security-solutions-service.html">Securtiy Solution</a></li>
+              <li><a  data-translatable href="it-consultancy-service.html">IT Consultancy // Conseil en informatique</a></li>
+              <li><a  data-translatable href="enterprise-business-solutions-service.html">Enterprise Business Solutions // Solutions d'entreprise</a></li>
+              <li><a  data-translatable href="it-infrastructure-service.html">IT Infrastructure and Security // Infrastructure informatique et sécurité </a></li>
+              <li><a  data-translatable href="app-development-service-details.html">App Development // Développement d'applications</a></li>
+              <li><a  data-translatable href="security-solutions-service.html">Securtiy Solution // Solutions de sécurité</a></li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Useful Links</h3>
+            <h3 data-translatable>Useful Links // Liens utiles</h3>
 
             <ul class="menu-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#about">About Us </a></li>
-              <li><a href="index.httml#service">Our Services</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="contact.html">Book A Demo</a></li>
+              <li><a  data-translatable href="index.html">Home // Accueil</a></li>
+              <li><a  data-translatable href="#about">About Us // À propos </a></li>
+              <li><a  data-translatable href="#service">Our Services // Nos Services`</a></li>
+              <li><a  data-translatable href="contact.html">Contact Us // Contactez-nous</a></li>
+              <li><a  data-translatable href="contact.html">Talk to Us // Parlez-nous</a></li>
             </ul>
           </div>
         </div>
@@ -486,7 +560,7 @@
 
         <div class="col-lg-3 col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Contact Us</h3>
+            <h3 data-translatable>Contact Us // Contactez-nous</h3>
 
             <div class="contact-box">
               <div class="icon">
@@ -551,29 +625,49 @@
 
 
 
+  <script>
+
+  </script>
 
 
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/fontawesome.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script src="assets/js/mobile-menu.js"></script>
+  <script src="assets/js/jquery.magnific-popup.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/Splitetext.js"></script>
+  <script src="assets/js/text-animation.js"></script>
+  <script src="assets/js/SmoothScroll.js"></script>
+  <script src="assets/js/jquery.lineProgressbar.js"></script>
+  <script src="assets/js/ripple-btn.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dom-i18n.min.js"></script>
 
-        <script>
+  <script>
+    var enButton = document.getElementById('en-btn');
+    var frButton = document.getElementById('fr-btn');
+    var i18n = domI18n({
+      selector: '[data-translatable]',
+      separator: ' // ',
+      languages: ['en', 'fr'],
+      defaultLanguage: 'en'
+    });
 
-     </script>
+    enButton.onclick = function () {
+      i18n.changeLanguage('en');
+    };
 
+    frButton.onclick = function () {
+      i18n.changeLanguage('fr');
+    };
 
-     <script src="assets/js/bootstrap.min.js"></script>
-     <script src="assets/js/aos.js"></script>
-     <script src="assets/js/fontawesome.js"></script>
-     <script src="assets/js/jquery.countup.js"></script>
-     <script src="assets/js/mobile-menu.js"></script>
-     <script src="assets/js/jquery.magnific-popup.js"></script>
-     <script src="assets/js/owl.carousel.min.js"></script>
-     <script src="assets/js/slick-slider.js"></script>
-     <script src="assets/js/gsap.min.js"></script>
-     <script src="assets/js/ScrollTrigger.min.js"></script>
-     <script src="assets/js/Splitetext.js"></script>
-     <script src="assets/js/text-animation.js"></script>
-     <script src="assets/js/SmoothScroll.js"></script>
-     <script src="assets/js/jquery.lineProgressbar.js"></script>
-     <script src="assets/js/ripple-btn.js"></script>
-     <script src="assets/js/main.js"></script>
+  </script>
+
 </body>
+
 </html>

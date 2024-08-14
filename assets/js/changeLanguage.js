@@ -1,12 +1,12 @@
 var enButton = document.getElementById('en-btn');
 var frButton = document.getElementById('fr-btn');
-const language = document.getElementById('languageSelector');
+const languageSelector = document.getElementById('languageSelector');
 const lang = localStorage.getItem('language');
 
 if (lang === "fr") {
-   document.getElementById('languageSelector').value = 2
+  document.getElementById('languageSelector').value = 2
 } else if (lang === "en") {
-   document.getElementById('languageSelector').value = 1
+  document.getElementById('languageSelector').value = 1
 }
 
 
@@ -17,21 +17,42 @@ var i18n = domI18n({
   defaultLanguage: 'en'
 });
 
-enButton.onclick = function () {
-  // i18n.changeLanguage('en');
-  localStorage.setItem('language',  'en')
-  const language = localStorage.getItem('language');
-  i18n.changeLanguage(language)
 
-};
+languageSelector.addEventListener("change", function (event) {
+  const lang = localStorage.getItem('language');
 
-frButton.onclick = function () {
-  // i18n.changeLanguage('fr');
-  localStorage.setItem('language',  'fr')
-  const language = localStorage.getItem('language');
-  i18n.changeLanguage(language)
+  console.log(lang)
+  if (lang === null) {
+    localStorage.setItem('language', 'fr')
 
-}
+    i18n.changeLanguage("en")
+  } else if (lang === "fr") {
+    i18n.changeLanguage("en")
+    localStorage.setItem('language', 'en')
+  } else if (lang === "en") {
+    i18n.changeLanguage("fr")
+    localStorage.setItem('language', 'fr')
+  }
+})
+
+
+// enButton.onclick = function (e) {
+//   // i18n.changeLanguage('en');
+//   localStorage.setItem('language', 'en')
+//   const language = localStorage.getItem('language');
+//   i18n.changeLanguage(language)
+//   e.preventDefault();
+
+// };
+
+// frButton.onclick = function (e) {
+//   // i18n.changeLanguage('fr');
+//   localStorage.setItem('language', 'fr')
+//   const language = localStorage.getItem('language');
+//   i18n.changeLanguage(language)
+//   e.preventDefault();
+
+// }
 const pageLoad = () => {
   //fetch language on local storage
   const language = localStorage.getItem('language')

@@ -1,3 +1,12 @@
+window.addEventListener("load", (event) => {
+  const lang = localStorage.getItem('language');
+
+  if (lang === null) {
+    localStorage.setItem('language', 'en')
+  }
+
+});
+
 var enButton = document.getElementById('en-btn');
 var frButton = document.getElementById('fr-btn');
 const languageSelector = document.getElementById('languageSelector');
@@ -21,14 +30,10 @@ var i18n = domI18n({
 languageSelector.addEventListener("change", function (event) {
   const lang = localStorage.getItem('language');
 
-  console.log(lang)
-  if (lang === null) {
-    localStorage.setItem('language', 'fr')
-
-    i18n.changeLanguage("en")
-  } else if (lang === "fr") {
+  if (lang === "fr") {
     i18n.changeLanguage("en")
     localStorage.setItem('language', 'en')
+
   } else if (lang === "en") {
     i18n.changeLanguage("fr")
     localStorage.setItem('language', 'fr')

@@ -90,6 +90,7 @@
         <div class="row">
           <div class="col-12">
             <div class="header-elements">
+
               <div class="site-logo">
                 <a href="index.html">
                   <img src="assets/img/logo/Renga-Logo-FinalX1.fw_.png" alt="">
@@ -99,12 +100,11 @@
 
               <div class="main-menu-ex main-menu-ex1">
                 <ul id="list-example">
-                  <li><a class="list-group-item list-group-item-action" href="index.html#">Home</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="index.html#about">About</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="index.html#service">Our Services</a></li>
-                  <li><a class="list-group-item list-group-item-action" href="contact.html">Contact Us</a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="index.html">Home // Accueil</a></li>
+                  <li><a data-translatable  class="list-group-item list-group-item-action" href="index.html#about">About // À propos </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="index.html#service">Our Services // Nos Services </a></li>
+                  <li><a data-translatable class="list-group-item list-group-item-action" href="contact.html">Contact Us // Contactez nous</a></li>
                 </ul>
-
               </div>
 
 
@@ -115,15 +115,46 @@
                     <img src="assets/img/icons/header1-icon.png" alt="">
                   </div>
                   <div class="headding">
-                    <p>Make a Call</p>
+                    <p data-translatable >Make a Call // Passer un appel</p>
                     <a href="#">+254 777 011211 </a>
                   </div>
                 </div>
+
                 <div class="button">
-                  <a class="theme-btn1" href="contact.html">Book A Demo <span><i
-                        class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="theme-btn1" href="contact.html"><span data-translatable> Talk to Us // Parlez-nous</span> <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
+
+                <div class="button">
+
+
+              <div class="main-menu-ex main-menu-ex1">
+                <ul id="list-example">
+                  <li>
+                  <li class="has-dropdown">
+                      <!-- <a>Set Language <i class="fa-solid fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li><a  id="en-btn">English</a></li>
+                        <li><a id="fr-btn">Fench</a></li>
+                      </ul>
+                    </li> -->
+                  
+
+                  <select id="languageSelector" class="form-select" aria-label="Default select example">
+                    <option id="en-btn" selected value="1">English</option>
+                    <option id="fr-btn" value="2">French</option>
+                  </select>
+                  </li>
+
+                  <!-- <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose Language</option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                  </select> -->
+                </ul>
               </div>
+            </div>
+           </div>
+
 
             </div>
           </div>
@@ -159,17 +190,20 @@
     <div class="mobile-nav">
 
       <ul>
-        <li class="has-dropdown"><a href="/">Home </a>
-
+        <li class="has-dropdown"><a data-translatable href="index.html">Home // Accueil </a>
+          
         </li>
-        <li><a href="index.html#about">About Us</a></li>
-        <li class="has-dropdown"><a href="#">Our Services</a>
+        <li>
+          <a data-translatable href="index.html#about">About Us // À propos de nous </a>
+        </li>
+        <li class="has-dropdown">
+          <a data-translatable href="index.html#about">Our Services // Nos Services </a>
           <ul class="sub-menu">
-            <li><a href="it-consultancy-service.html">IT Consultancy</a></li>
-            <li><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions</a></li>
-            <li><a href="it-infrastructure-service.html">IT Infrastructure and Security</a></li>
-            <li><a href="app-development-service-details.html">App Development</a></li>
-            <li><a href="security-solutions-service.html">Security Solutions</a></li>
+            <li><a data-translatable href="it-consultancy-service.html">IT Consultancy // Conseil en informatique</a></li>
+            <li><a data-translatable href="enterprise-business-solutions-service.html">Enterprise Business Solutions // Solutions d'entreprise</a></li>
+            <li><a data-translatable href="it-infrastructure-service.html">IT Infrastructure and Security // Infrastructure informatique et sécurité </a></li>
+            <li><a data-translatable href="app-development-service-details.html">App Development // Développement d'applications</a></li>
+            <li><a data-translatable href="security-solutions-service.html">Security Solutions // Solutions de sécurité</a></li>
           </ul>
         </li>
 
@@ -205,7 +239,7 @@
       </ul>
 
       <div class="single-footer-items">
-        <h3>Contact Us</h3>
+        <h3 data-translatable>Contact Us // Contactez nous</h3>
 
         <div class="contact-box">
           <div class="icon">
@@ -221,7 +255,7 @@
             <img src="assets/img/icons/footer1-icon3.png" alt="">
           </div>
           <div class="pera">
-            <a href="mailto:info@renga.tech">info@renga.tech</a>
+              <a href="mailto:info@renga.tech">info@renga.tech</a>
           </div>
         </div>
 
@@ -230,20 +264,20 @@
             <img src="assets/img/icons/footer1-icon4.png" alt="">
           </div>
           <div class="pera">
-            <a href="https://renga.tech" target="_blank">www.renga.tech</a>
+            <a href="https://renga.tech"  target="_blank">www.renga.tech</a>
           </div>
         </div>
 
       </div>
 
       <div class="contact-infos">
-        <h3>Our Location</h3>
-        <ul class="social-icon">
-          <li><a href="https://mw.linkedin.com/company/rengatechnologies"><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li><a href="https://www.facebook.com/RengaTech"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/rengatechltd"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
+        <h3 data-translatable> Our Location // Notre emplacement</h3>
+            <ul class="social-icon">
+              <li><a href="https://mw.linkedin.com/company/rengatechnologies"><i
+                    class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.facebook.com/RengaTech"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/rengatechltd"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
       </div>
 
     </div>
@@ -257,11 +291,11 @@
       <div class="row align-items-center text-center">
         <div class="col-lg-8 m-auto">
           <div class="main-heading">
-            <h1>IT Infrastructure & Security </h1>
+          <h1 data-translatable>IT Infrastructure and Security // Infrastructure informatique et sécurité</h1>
             <div class="space16"></div>
-            <span class="span"><img src="assets/img/logo/cropped-favicon.fw_-32x32.png" alt=""> <a href="/">Home</a>
-              <span class="arrow"><i class="fa-regular fa-angle-right"></i></span> Service <span class="arrow"><i
-                  class="fa-regular fa-angle-right"></i></span> IT Infrastructure & Security </span>
+            <span class="span"><img src="assets/img/logo/cropped-favicon.fw_-32x32.png" alt=""> <a data-translatable href="/">Home // Accueil</a>
+              <span class="arrow"><i class="fa-regular fa-angle-right"></i></span> <span data-translatable>Service // Service</span> <span class="arrow"><i
+                class="fa-regular fa-angle-right"></i></span> <span data-translatable>IT Infrastructure and Security // Infrastructure informatique et sécurité</span></span>
           </div>
         </div>
       </div>
@@ -269,7 +303,6 @@
   </div>
 
   <!--=====HERO AREA END=======-->
-
   <!--=====SERVICE DETAILS AREA START=======-->
 
   <div class="service-details-area-all sp">
@@ -277,7 +310,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="sidebar-box-area mb-40">
-            <h3>Search by Keyword</h3>
+            <h3 data-translatable>Search by Keyword // Recherche par mot-clé</h3>
             <div class="search">
               <input type="text" placeholder="Type keyword here">
 
@@ -287,30 +320,32 @@
             </div>
           </div>
 
+
+
           <div class="sidebar-box-area sidebar-bg mb-40">
-            <h3>Our Services</h3>
+            <h3 data-translatable> Our Services  // 	Nos Services </h3>
             <ul class="features-list">
-              <li><a href="app-development-service-details.html">App Development <span><i class="fa-regular fa-angle-right"></i></span></a></li>
-              <li><a href="it-consultancy-service.html">IT Consultancy<span><i class="fa-regular fa-angle-right"></i></span></a></li>
-              <li><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions <span><i class="fa-regular fa-angle-right"></i></span></a>
+              <li><a  href="app-development-service-details.html"><span data-translatable>App Development // Développement d'applications</span> <span><i class="fa-regular fa-angle-right"></i></span></a></li>
+              <li><a href="it-consultancy-service.html"><span data-translatable>IT Consultancy // Conseil en informatique</span><span><i class="fa-regular fa-angle-right"></i></span></a></li>
+              <li><a href="enterprise-business-solutions-service.html"><span data-translatable>Enterprise Business Solutions // Solutions d'entreprise</span> <span><i class="fa-regular fa-angle-right"></i></span></a>
               </li>
-              <li><a href="security-solutions-service.html">Security Solutions <span><i class="fa-regular fa-angle-right"></i></span></a></li>
-              <li><a href="it-infrastructure-service.html">IT Infrastructure and Security<span><i class="fa-regular fa-angle-right"></i></span></a>
+              <li><a href="security-solutions-service.html"><span data-translatable>Security Solutions // Solutions de sécurité</span> <span><i class="fa-regular fa-angle-right"></i></span></a></li>
+              <li><a href="it-infrastructure-service.html"><span data-translatable>IT Infrastructure and Security // Infrastructure informatique et sécurité </span><span><i class="fa-regular fa-angle-right"></i></span></a>
               </li>
             </ul>
           </div>
 
           <div class="sidebar-box-area sidebar-bg mb-40">
-            <h3>Download Brochure</h3>
+            <h3 data-translatable>Download Brochure // Télécharger la brochure </h3>
             <p>With a focus on excellence & commitment to exceeding expectations, our experienced team is here to
               empower Solution.</p>
             <div class="download-btns">
-              <a class="daownload1" href="#">PDF Download <img src="assets/img/icons/download-img.png" alt=""></a>
+              <a  class="daownload1" href="#"><span data-translatable>PDF Download // Téléchargement PDF</span> <img src="assets/img/icons/download-img.png" alt=""></a>
             </div>
           </div>
 
           <div class="sidebar-box-area sidebar-bg mb-40">
-            <h3>Book A Demo</h3>
+            <h3 data-translatable>Talk to Us // Parlez-nous</h3>
             <div class="contact-form">
               <form action="#">
 
@@ -323,7 +358,7 @@
                 </div>
 
                 <div class="single-input">
-                    <input type="number" placeholder="Phone Number">
+                  <input type="number" placeholder="Phone Number">
                 </div>
 
                 <div class="single-input">
@@ -331,7 +366,7 @@
                 </div>
 
                 <div class="button">
-                  <button class="theme-btn1">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                  <button class="theme-btn1"><span data-translatable>Send Message // Envoyer un message </span> <span><i class="fa-solid fa-arrow-right"></i></span></button>
                 </div>
               </form>
             </div>
@@ -348,17 +383,28 @@
                 </div>
                 <div class="space30"></div>
                 <div class="heading1">
-                    <h5> Effectively Manage your Technology Lifecycle </h5>
+                    <h5 data-translatable> Effectively Manage your Technology
+                    Lifecycle // Gérez efficacement votre cycle de vie
+                    technologique </h5>
                   <div class="space30"></div>
 
 
                   <p style="color: purple; font-style: italic;">
-                      <strong>Renga Technologies Limited are Technology
+                      <strong data-translatable>Renga Technologies Limited are Technology
                     Infrastructure focused and deliver highest value for the
                     investments customers make on IT Infra assets. We provide
                     these services across a range of technologies and delivery
                     models including cloud, IT outsourcing, Network, data
-                    center, end-user computing, security,and sustainability
+                    center, end-user computing, security,and sustainability // 
+                    Renga Technologies Limited se concentre sur l'infrastructure
+                    technologique et offre la plus grande valeur pour les
+                    investissements que les clients effectuent dans les actifs
+                    d'infrastructure informatique. Nous fournissons ces services
+                    à travers une gamme de technologies et de modèles de
+                    prestation, notamment le cloud, l'externalisation
+                    informatique, le réseau, le centre de données,
+                    l'informatique de l'utilisateur final, la sécurité et la
+                    durabilité.
                     </strong> </p>
 
                   <div class="space30"></div>
@@ -387,19 +433,19 @@
                           <div class="space20"></div>
 
                         <ul class="expart-list">
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text">Enterprise Tech Sales/Support</span> </li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Data Center Consolidation & Transformation Solutions</span> </li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Network Operation Optimization</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Wireless Site Survey and Audit</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Cloud Deployment & Migrations</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Workplace Transformation Solutions</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Enterprise Mobility Solutions</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Hyper converged Private Clouds & Big Data Solutions</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Integrated Collaboration Solutions</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Service Level Management</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Configuration & Capacity Management</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Asset Management</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> VDI Solution architects</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text">Enterprise Tech Sales/Support // Ventes/assistance technique aux entreprises</span> </li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Data Center Consolidation & Transformation Solutions // Solutions de consolidation et de transformation des centres de données</span> </li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Network Operation Optimization // Network Operation Optimization</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Wireless Site Survey and Audit // Wireless Site Survey and Audit</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Cloud Deployment & Migrations // Déploiement et migrations cloud</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Workplace Transformation Solutions // Solutions de transformation du lieu de travail</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Enterprise Mobility Solutions //  Enterprise Mobility Solutions</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Hyper converged Private Clouds & Big Data Solutions // Clouds privés hyper convergés et solutions Big Data</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Integrated Collaboration Solutions // Solutions de collaboration intégrées</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Service Level Management // Service Level Management</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Configuration & Capacity Management // Configuration & Capacity Management</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Asset Management // Gestion des actifs</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> VDI Solution architects // VDI Solution architects</span></li>
                           </ul>
                 </div>
 
@@ -424,23 +470,23 @@
                           <div class="space20"></div>
 
                         <ul class="expart-list">
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Vulnerability Assessment & Penetration Test</span> </li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Risk & Threat Management</span> </li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Compliance Automation & Reporting</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Security Posture Assessment</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Forensics Operationalized</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Reducing the risk and enticement to attack.</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> ISMS & Security policies provisioning</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Penetration testing and ethical hacks</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Enterprise security Anti-virus security services</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Cyber security awareness and training services.</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Security Events Monitoring & Reporting</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> SIEM & SOAR Implementation</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Network Security Management</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> GRC and Fraud Management</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> End point Security</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Wireless Securtiy</span></li>
-                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span class="text"> Zero Trust Network Access (ZTNA) Solutions</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Vulnerability Assessment & Penetration Test // Évaluation des vulnérabilités et test de pénétration</span> </li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Risk & Threat Management // Gestion des risques et des menaces</span> </li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Compliance Automation & Reporting // Automatisation et reporting de conformité</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Security Posture Assessment // Évaluation de la posture de sécurité</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Forensics Operationalized // La médecine légale opérationnalisée</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Reducing the risk and enticement to attack //  Reducing the risk and enticement to attack</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> ISMS & Security policies provisioning // ISMS & Security policies provisioning</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Penetration testing and ethical hacks // Penetration testing and ethical hacks</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Enterprise security Anti-virus security services //  Enterprise security Anti-virus security services</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Cyber security awareness and training services // Services de sensibilisation et de formation à la cybersécurité</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Security Events Monitoring & Reporting //  Surveillance et reporting des événements de sécurité</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> SIEM & SOAR Implementation // Implémentation SIEM & SOAR</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Network Security Management // Gestion de la sécurité du réseau </span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> GRC and Fraud Management // GRC et gestion de la fraude</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> End point Security // Sécurité du point final</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Wireless Securtiy // Sécurité sans fil</span></li>
+                            <li><span class="check"><i class="fa-solid fa-check"></i></span> <span data-translatable class="text"> Zero Trust Network Access (ZTNA) Solutions // Solutions d'accès réseau Zero Trust (ZTNA)</span></li>
                           </ul>
                     </div>
 
@@ -470,7 +516,7 @@
 
               <div class="faq-area-all">
                 <div class="heading1">
-                  <h5>Frequently Asked Question</h5>
+                  <h5 data-translatable>Frequently Asked Question // Questions fréquemment posées</h5>
                 </div>
                 <div class="space20"></div>
 
@@ -479,52 +525,65 @@
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        What does Renga do?
+                        <span data-translatable>What does Renga do? // Que fait Renga ?</span>
                       </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                       data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Yes, we'd be happy to provide references or case studies of past
-                        projects upon request. Our satisfied clients serve as a testament.</div>
+                      <div class="accordion-body"><span data-translatable>Yes, we'd be happy to provide references or case studies of past
+                        projects upon request. Our satisfied clients serve as a testament. // Oui, nous serions heureux de fournir des références ou des études de cas du passé
+                        projets sur demande. Nos clients satisfaits en sont la preuve. </span></div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        How can Renga help my business?
+                        <span data-translatable>How can Renga help my business? // Comment Renga peut-il aider mon entreprise ? </span>
                       </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                       data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Yes, we'd be happy to provide references or case studies of past
-                        projects upon request. Our satisfied clients serve as a testament.</div>
+                      <div class="accordion-body"><span data-translatable>Yes, we'd be happy to provide references or case studies of past
+                        projects upon request. Our satisfied clients serve as a
+                        testament. // Oui, nous serions heureux de fournir des
+                        références ou des études de cas de projets antérieurs
+                        sur demande. Nos clients satisfaits en sont la
+                        preuve.</span></div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        What industries does Renga serve?
+                        <span data-translatable>What industries does Renga serve? // Quels secteurs d'activité Renga dessert-il ?</span>
                       </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                       aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Yes, we'd be happy to provide references or case studies of past
-                        projects upon request. Our satisfied clients serve as a testament.</div>
+                      <div class="accordion-body"><span data-translatable>Yes, we'd be happy to provide references or case studies of past
+                        projects upon request. Our satisfied clients serve as a
+                        testament. // Oui, nous serions heureux de fournir des
+                        références ou des études de cas de projets antérieurs
+                        sur demande. Nos clients satisfaits en sont la
+                        preuve.</span></div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        How experienced is the team at Renga?
+                        <span data-translatable>How experienced is the team at Renga? // Quelle est l'expérience de l'équipe de Renga ?</span>
                       </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                       data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Yes, we'd be happy to provide references or case studies of past
-                        projects upon request. Our satisfied clients serve as a testament.</div>
+                      <div class="accordion-body"><span data-translatable>Yes, we'd be happy to provide references or case studies of past
+                        projects upon request. Our satisfied clients serve as a
+                        testament. // Oui, nous serions heureux de fournir des
+                        références ou des études de cas de projets antérieurs
+                        sur demande. Nos clients satisfaits en sont la
+                        preuve.</span></div>
                     </div>
                   </div>
 
@@ -532,13 +591,20 @@
                     <h2 class="accordion-header" id="flush-headingFive">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        How long does it take to implement a solution from Renga?
+                        <span data-translatable>How long does it take to
+                        implement a solution from Renga? // Combien de temps
+                        faut-il pour mettre en œuvre une solution de Renga ?
+                        </span>
                       </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                       data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Yes, we'd be happy to provide references or case studies of past
-                        projects upon request. Our satisfied clients serve as a testament.</div>
+                      <div class="accordion-body"><span data-translatable>Yes, we'd be happy to provide references or case studies of past
+                        projects upon request. Our satisfied clients serve as a
+                        testament. // Oui, nous serions heureux de fournir des
+                        références ou des études de cas de projets antérieurs
+                        sur demande. Nos clients satisfaits en sont la preuve.
+                        </span></div>
                     </div>
                   </div>
 
@@ -658,17 +724,21 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="heading1-w">
-            <h2 class="title tg-element-title"> At Renga, we believe in an IT Solution that is tailored to your business
-              needs. </h2>
+            <h2 data-translatable class="title tg-element-title"> At Renga, we
+            believe in an IT Solution that is tailored to your business needs.
+            // Chez Renga, nous croyons en une solution informatique adaptée aux
+            besoins de votre entreprise. </h2>
             <div class="space16"></div>
-            <p data-aos="fade-right" data-aos-duration="700"> Talk to us and find out how our SaaS services can impact
-              your business. </p>
+            <p data-translatable data-aos="fade-right" data-aos-duration="700">
+            Talk to us and find out how our SaaS services can impact your
+            business. //  Parlez-nous et découvrez comment nos services SaaS
+            peuvent impacter votre entreprise.</p>
           </div>
         </div>
 
         <div class="col-lg-5">
           <div class="buttons">
-            <a class="cta-btn1" href="#">Contact Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <a class="cta-btn1" href="contact.html"> <span data-translatable>Contact Us // Contactez nous</span> <span><i class="fa-solid fa-arrow-right"></i></span> </a>
             <!-- <a class="cta-btn2" href="#">Explore Solution <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
           </div>
         </div>
@@ -677,8 +747,6 @@
   </div>
 
   <!--=====CTA AREA END=======-->
-
-
 
   <!--===== FOOTER AREA START =======-->
 
@@ -692,8 +760,13 @@
             </div>
             <div class="space20"></div>
             <div class="heading1">
-              <p>RENGA focusses on offering solutions around Consulting, Mobility & Digital Transformation, Software
-                Development, IT Infrastructure and IT Security.</p>
+              <p data-translatable>RENGA focusses on offering solutions around
+              Consulting, Mobility & Digital Transformation, Software
+                Development, IT Infrastructure and IT Security. // RENGA vous
+                propose des solutions autour du conseil, de la mobilité et de la
+                transformation numérique, du développement logiciel, de
+                l'infrastructure informatique et de la sécurité informatique.
+                </p>
             </div>
             <ul class="social-icon">
               <li><a href="https://mw.linkedin.com/company/rengatechnologies"><i
@@ -706,28 +779,29 @@
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Service We Offer</h3>
+            <h3 data-translatable>Service We Offer // Services Que Nous Offrons </h3>
+
 
             <ul class="menu-list">
-              <li><a href="it-consultancy-service.html">IT Consultancy</a></li>
-              <li><a href="enterprise-business-solutions-service.html">Enterprise Business Solutions</a></li>
-              <li><a href="it-infrastructure-service.html">IT Infrastructure and Security</a></li>
-              <li><a href="app-development-service-details.html">App Development</a></li>
-              <li><a href="security-solutions-service.html">Securtiy Solution</a></li>
+              <li><a  data-translatable href="it-consultancy-service.html">IT Consultancy // Conseil en informatique</a></li>
+              <li><a  data-translatable href="enterprise-business-solutions-service.html">Enterprise Business Solutions // Solutions d'entreprise</a></li>
+              <li><a  data-translatable href="it-infrastructure-service.html">IT Infrastructure and Security // Infrastructure informatique et sécurité </a></li>
+              <li><a  data-translatable href="app-development-service-details.html">App Development // Développement d'applications</a></li>
+              <li><a  data-translatable href="security-solutions-service.html">Securtiy Solution // Solutions de sécurité</a></li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Useful Links</h3>
+            <h3 data-translatable>Useful Links // Liens utiles</h3>
 
             <ul class="menu-list">
-              <li><a href="index.html#">Home</a></li>
-              <li><a href="index.html#about">About Us </a></li>
-              <li><a href="index.html#service">Our Services</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="contact.html">Book A Demo</a></li>
+              <li><a  data-translatable href="index.html">Home // Accueil</a></li>
+              <li><a  data-translatable href="#about">About Us // À propos </a></li>
+              <li><a  data-translatable href="#service">Our Services // Nos Services`</a></li>
+              <li><a  data-translatable href="contact.html">Contact Us // Contactez nous</a></li>
+              <li><a  data-translatable href="contact.html">Talk to Us // Parlez-nous</a></li>
             </ul>
           </div>
         </div>
@@ -735,7 +809,7 @@
 
         <div class="col-lg-3 col-md-6 col-12">
           <div class="single-footer-items">
-            <h3>Contact Us</h3>
+            <h3 data-translatable>Contact Us // Contactez nous</h3>
 
             <div class="contact-box">
               <div class="icon">
@@ -751,7 +825,7 @@
                 <img src="assets/img/icons/footer1-icon2.png" alt="">
               </div>
               <div class="pera">
-                <a href="tel:+254777011211 ">+254 777 011211 </a>
+                <a href="tel:254777011211 ">+254 777 011211 </a>
               </div>
             </div>
 
@@ -816,6 +890,8 @@
   <script src="assets/js/jquery.lineProgressbar.js"></script>
   <script src="assets/js/ripple-btn.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/dom-i18n.min.js"></script>
+  <script src="assets/js/changeLanguage.js"></script>
 </body>
 
 </html>

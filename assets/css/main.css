@@ -1548,7 +1548,7 @@ body.body {
   --ztc-text-text-2: #fff;
   --ztc-text-pera-text-1: #676879;
   --ztc-text-pera-text-2: #D2D1D5;
-  --ztc-bg-main-bg-1: #6F3895;
+  --ztc-bg-main-bg-1: #75409a;
   --ztc-bg-main-bg-2: #6E18EF;
   --ztc-bg-main-bg-3: #113ADC;
   --ztc-bg-main-bg-4: #A1E934;
@@ -2836,7 +2836,7 @@ a.header__search.header-search-btn p {
   color: #fff;
   transform: translateY(-4px);
   transition: all 0.4s;
-  background-color: #3059CE;
+  background-color: #6f3895;
 }
 .theme-btn1:hover::after {
   width: 100%;
@@ -2886,7 +2886,7 @@ a.header__search.header-search-btn p {
   color: #fff;
   transform: translateY(-4px);
   transition: all 0.4s;
-  background-color: #3059CE;
+  background-color: #672389;
 }
 .cta-btn1:hover::after {
   width: 100%;

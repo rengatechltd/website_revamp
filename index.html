@@ -49,6 +49,48 @@
          .project-slider .heading {
              text-align: center;
          }
+
+
+         .cert-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cert-img {
+            border-radius: 8px;
+            height: 150px; /* Reduced height of the image */
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .card-body h5 {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-body p {
+            color: #666;
+        }
+
+        .container {
+            margin-top: 5rem;
+        }
+
+
      </style>
 
 
@@ -1757,6 +1799,69 @@
   </div>
 
   <!--=====CTA AREA END=======-->
+
+
+
+ <!-- Certifications Section -->
+ <section id="certifications" class="container">
+  <h2 class="section-title">Our Certifications</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Card 1 -->
+      <div class="col">
+          <div class="card cert-card">
+              <img src="assets/img/certs/Screenshot 2025-03-25 105918.png" class="card-img-top cert-img" alt="Certification 1">
+              <div class="card-body">
+                  <h5 class="card-title">Certification Title 1</h5>
+                  <p class="card-text">This certification demonstrates our commitment to quality and industry standards.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+          <div class="card cert-card">
+              <img src="assets/img/certs/Screenshot 2025-03-25 105924.png" class="card-img-top cert-img" alt="Certification 2">
+              <div class="card-body">
+                  <h5 class="card-title">Certification Title 2</h5>
+                  <p class="card-text">We achieved this certification by meeting the rigorous guidelines set by the authority.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+          <div class="card cert-card">
+              <img src="assets/img/certs/Screenshot 2025-03-25 105929.png" class="card-img-top cert-img" alt="Certification 3">
+              <div class="card-body">
+                  <h5 class="card-title">Certification Title 3</h5>
+                  <p class="card-text">This certification recognizes our exceptional performance in specific industry sectors.</p>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="col">
+          <div class="card cert-card">
+              <img src="assets/img/certs/Screenshot 2025-03-25 105934.png" class="card-img-top cert-img" alt="Certification 3">
+              <div class="card-body">
+                  <h5 class="card-title">Certification Title 3</h5>
+                  <p class="card-text">This certification recognizes our exceptional performance in specific industry sectors.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Add more certification cards as needed -->
+
+  </div>
+</section>
+
+
+
+
+  <div class="space20"></div>
+
 
   <!--===== FOOTER AREA START =======-->
 

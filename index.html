@@ -27,193 +27,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
 
-    <style>
-      body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          overflow-x: hidden;
-      }
-      .solutions-container {
-          height: 600px;
-          width: 100%;
-          overflow: hidden;
-      border-radius: 20px; /* Add curved borders */
-      }
-      .category-column {
-          height: 100%;
-          position: relative;
-          overflow: hidden;
-          padding: 0;
-          /* transition: all 0.5s ease; */
-          transition: opacity 0.1s ease-in-out 0.4s, visibility 0s ease-in-out; /* Delay content visibility on hover */
-          flex: 1;
-      }
-      .category-column.expanded {
-          flex: 4;
-      }
-      .category-content {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 1rem;
-          color: white;
-          background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-      }
-      .category-bg {
-          background-size: cover;
-          background-position: center;
-          height: 100%;
-          width: 100%;
-          transition: transform 0.5s ease;
-      }
 
-      .category-column:hover .category-bg {
-          transform: scale(1.05);
-      }
-      .bg-land-industry {
-          background-image: url('./assets/img/service/appdev-splash2.jpg');
-      }
-      .bg-citizen {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-education {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-healthcare {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-mining {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-government {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-smart-city {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-food {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-travel {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-agriculture {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .system-list {
-          list-style: none;
-          padding-left: 0;
-          margin-bottom: 2rem;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease;
-          display: none;
-      }
-      .category-column:hover .system-list,
-      .category-column.active .system-list {
-          opacity: 1;
-          transform: translateY(0);
-          display: block;
-          visibility: visible; /* Allow content to occupy space */
-          transition: opacity 0.4s ease-in-out 0.4s, visibility 0s ease-in-out; /* Delay content visibility on hover */
-      }
-      .system-list li {
-          margin-bottom: 0.5rem;
-          display: flex;
-          align-items: center;
-      }
-      .system-list li::before {
-          content: "→";
-          margin-right: 0.5rem;
-      }
-      .view-btn {
-          display: inline-flex;
-          align-items: center;
-          color: white;
-          text-decoration: none;
-          font-weight: 500;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease 0.1s;
-      }
-      .category-column:hover .view-btn,
-      .category-column.active .view-btn {
-          opacity: 1;
-          transform: translateY(0);
-      }
-      .view-btn:hover {
-          color: white;
-          text-decoration: underline;
-      }
-      .home-icon {
-          position: absolute;
-          bottom: 15px;
-          left: 15px;
-          background-color: white;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #333;
-          text-decoration: none;
-          font-size: 1.2rem;
-          opacity: 0;
-          transform: scale(0.8);
-          transition: all 0.3s ease 0.2s;
-      }
-      .category-column:hover .home-icon,
-      .category-column.active .home-icon {
-          opacity: 1;
-          transform: scale(1);
-      }
-      .vertical-text {
-          writing-mode: vertical-lr;
-          transform: rotate(180deg);
-          text-align: center;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-          font-size: 1.5rem;
-          transition: opacity 0.3s ease, transform 0.5s ease;
-      }
-      .category-column:hover .vertical-text,
-      .category-column.active .vertical-text {
-          opacity: 0;
-          transform: rotate(180deg) translateX(-50px);
-      }
-      .category-title {
-          font-size: 2rem;
-          font-weight: bold;
-          margin-bottom: 1.5rem;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease;
-          display: none;
-      }
-      .category-column:hover .category-title,
-      .category-column.active .category-title {
-          opacity: 1;
-          transform: translateY(0);
-          display: block;
-      }
-      /* Mobile responsiveness */
-      @media (max-width: 992px) {
-          .solutions-container {
-              height: auto;
-          }
-          .category-column {
-              height: 200px;
-          }
-      }
-  </style>
+    <!-- Bootstrap Icons (required for the icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
 
     <!--=====JQUERY=======-->
@@ -222,6 +38,26 @@
 
   <body class="body tg-heading-subheading animation-style3">
     <!--=====progress END=======-->
+
+
+    <!-- Floating Social Media Sidebar -->
+    <div class="social-sidebar">
+      <a href="#" class="social-phone">
+          <i class="bi bi-telephone-fill"></i>
+      </a>
+      <a href="#" class="social-linkedin">
+          <i class="bi bi-linkedin"></i>
+      </a>
+      <!-- <a href="#" class="social-twitter">
+          <i class="bi bi-twitter-x"></i>
+      </a> -->
+      <a href="#" class="social-facebook">
+          <i class="bi bi-facebook"></i>
+      </a>
+      <a href="#" class="social-whatsapp">
+          <i class="bi bi-whatsapp"></i>
+      </a>
+  </div>
 
     <div class="paginacontainer">
       <div class="progress-wrap">

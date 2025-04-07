@@ -304,3 +304,64 @@ project-slider {
  .card-body p {
    color: #666;
  }
+
+
+
+ .carousel-item {
+   height: 500px;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+ }
+ 
+ .carousel-caption {
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 10px;
+   padding: 30px;
+   max-width: 600px;
+   margin: 0 auto;
+   bottom: 100px;
+ }
+ 
+ .navbar {
+   background-color: rgba(33, 37, 41, 0.9) !important;
+ }
+ 
+ .service-icon {
+   font-size: 3rem;
+   margin-bottom: 20px;
+   color: #0d6efd;
+ }
+ 
+ .btn-learn-more {
+   background-color: #0d6efd;
+   border: none;
+   padding: 10px 25px;
+   transition: all 0.3s ease;
+ }
+ 
+ .btn-learn-more:hover {
+   background-color: #0b5ed7;
+   transform: translateY(-3px);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #app-dev {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                     url('/api/placeholder/1200/500');
+ }
+ 
+ #it-consulting {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                     url('/api/placeholder/1200/500');
+ }
+ 
+ #project-management {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                     url('/api/placeholder/1200/500');
+ }
+ 
+ #cloud-services {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                     url('/api/placeholder/1200/500');
+ }

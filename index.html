@@ -354,88 +354,91 @@
     <!--=====HERO AREA START=======-->
 
     <div
-      class="hero1"
-      style="
-        background-image: url(assets/img/bg/hero1-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
+      class="project sp"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="main-headding">
-              <span
-                class="span"
-                data-aos="zoom-in-left"
-                data-aos-duration="700"
-              >
-                <h1 data-translatable style="color: #723b97">
-                  Renga Technologies Limited // Renga Technologies Limitée
-                </h1></span
-              >
-              <h3 data-translatable class="title tg-element-title">
-                Designing, Developing and Deploying IT Solutions // Conception,
-                développement et déploiement de solutions informatiques
-                d'entreprise
-              </h3>
-              <div class="space16"></div>
-              <p data-translatable>
-                We innovate IT solutions through the synergy of international
-                experience and African insight, enabling RENGA to offer a unique
-                value proposition in the market, giving us a distinct and
-                competitive advantage. // Nous innovons les solutions
-                informatiques. La synergie de l'expérience internationale
-                combinée à l'intuition africaine permet à RENGA d'offrir une
-                proposition de valeur unique sur le marché, ce qui nous confère
-                un avantage distinct et compétitif.
-              </p>
 
-              <div class="space30"></div>
-              <div class="buttons">
-                <!-- <a class="play-btn" href="https://www.youtube.com/watch?v=kcfs1-ryKWE"><span><i class="fa-regular fa-play"></i></span> Watch Demo Video</a> -->
+      <div id="serviceCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <!-- App Development -->
+          <div class="carousel-item active" style="background-image: url('assets/img/service/appdev-splash2.jpg')" id="app-dev">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                </svg>
               </div>
+              <h2>Application Development</h2>
+              <p class="d-none d-md-block">Custom software solutions tailored to your business needs. Our expert developers create robust, scalable applications that drive innovation and growth.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <div class="hero1-all-images">
-              <div class="image1">
-                <img
-                  src="assets/img/hero/infrastructure-splash.jpg"
-                  style="border-radius: 20%"
-                  alt=""
-                />
+          
+          <!-- IT Consulting -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/Consultancy-Services.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"/>
+                </svg>
               </div>
-              <div class="image2 reveal">
-                <img src="assets/img/hero/lady.fw_.png" alt="" />
+              <h2>IT Consulting</h2>
+              <p class="d-none d-md-block">Strategic technology guidance to transform your business. Our consultants analyze your needs and recommend solutions that align with your goals and budget.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
+            </div>
+          </div>
+          
+          <!-- Project Management -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/ebs.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+                </svg>
               </div>
-              <div class="image3 shape-animaiton3">
-                <img
-                  src="assets/img/hero/hero5-image5.png"
-                  style="border-radius: 25px"
-                  alt=""
-                />
+              <h2>Project Management</h2>
+              <p class="d-none d-md-block">Expert oversight of your technology initiatives from inception to completion. We ensure timely delivery, budget adherence, and exceptional quality outcomes.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
+            </div>
+          </div>
+          
+          <!-- Cloud Services -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/Consultancy-Services.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973z"/>
+                </svg>
               </div>
-              <div class="image4 shape-animaiton3">
-                <img
-                  src="assets/img/hero/hero6image6.png"
-                  style="border-radius: 25px"
-                  alt=""
-                />
-              </div>
-              <div class="shape1">
-                <img src="assets/img/shapes/header1-shape1.png" alt="" />
-              </div>
-              <div class="shape2">
-                <img src="assets/img/shapes/header1-shape2.png" alt="" />
-              </div>
+              <h2>Cloud Services</h2>
+              <p class="d-none d-md-block">Secure, scalable cloud solutions to modernize your infrastructure. Our services include migration, optimization, and ongoing management of your cloud environment.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
             </div>
           </div>
         </div>
+        
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+
     </div>
+
+    <div class="space60"></div>
 
     <!--=====HERO AREA END=======-->
 

@@ -27,193 +27,9 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
 
-    <style>
-      body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          overflow-x: hidden;
-      }
-      .solutions-container {
-          height: 600px;
-          width: 100%;
-          overflow: hidden;
-      border-radius: 20px; /* Add curved borders */
-      }
-      .category-column {
-          height: 100%;
-          position: relative;
-          overflow: hidden;
-          padding: 0;
-          /* transition: all 0.5s ease; */
-          transition: opacity 0.1s ease-in-out 0.4s, visibility 0s ease-in-out; /* Delay content visibility on hover */
-          flex: 1;
-      }
-      .category-column.expanded {
-          flex: 4;
-      }
-      .category-content {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 1rem;
-          color: white;
-          background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-      }
-      .category-bg {
-          background-size: cover;
-          background-position: center;
-          height: 100%;
-          width: 100%;
-          transition: transform 0.5s ease;
-      }
 
-      .category-column:hover .category-bg {
-          transform: scale(1.05);
-      }
-      .bg-land-industry {
-          background-image: url('./assets/img/service/appdev-splash2.jpg');
-      }
-      .bg-citizen {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-education {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-healthcare {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-mining {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-government {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-smart-city {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-food {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-travel {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .bg-agriculture {
-          background-image: url('/api/placeholder/400/800');
-      }
-      .system-list {
-          list-style: none;
-          padding-left: 0;
-          margin-bottom: 2rem;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease;
-          display: none;
-      }
-      .category-column:hover .system-list,
-      .category-column.active .system-list {
-          opacity: 1;
-          transform: translateY(0);
-          display: block;
-          visibility: visible; /* Allow content to occupy space */
-          transition: opacity 0.4s ease-in-out 0.4s, visibility 0s ease-in-out; /* Delay content visibility on hover */
-      }
-      .system-list li {
-          margin-bottom: 0.5rem;
-          display: flex;
-          align-items: center;
-      }
-      .system-list li::before {
-          content: "→";
-          margin-right: 0.5rem;
-      }
-      .view-btn {
-          display: inline-flex;
-          align-items: center;
-          color: white;
-          text-decoration: none;
-          font-weight: 500;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease 0.1s;
-      }
-      .category-column:hover .view-btn,
-      .category-column.active .view-btn {
-          opacity: 1;
-          transform: translateY(0);
-      }
-      .view-btn:hover {
-          color: white;
-          text-decoration: underline;
-      }
-      .home-icon {
-          position: absolute;
-          bottom: 15px;
-          left: 15px;
-          background-color: white;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #333;
-          text-decoration: none;
-          font-size: 1.2rem;
-          opacity: 0;
-          transform: scale(0.8);
-          transition: all 0.3s ease 0.2s;
-      }
-      .category-column:hover .home-icon,
-      .category-column.active .home-icon {
-          opacity: 1;
-          transform: scale(1);
-      }
-      .vertical-text {
-          writing-mode: vertical-lr;
-          transform: rotate(180deg);
-          text-align: center;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-          font-size: 1.5rem;
-          transition: opacity 0.3s ease, transform 0.5s ease;
-      }
-      .category-column:hover .vertical-text,
-      .category-column.active .vertical-text {
-          opacity: 0;
-          transform: rotate(180deg) translateX(-50px);
-      }
-      .category-title {
-          font-size: 2rem;
-          font-weight: bold;
-          margin-bottom: 1.5rem;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: all 0.4s ease;
-          display: none;
-      }
-      .category-column:hover .category-title,
-      .category-column.active .category-title {
-          opacity: 1;
-          transform: translateY(0);
-          display: block;
-      }
-      /* Mobile responsiveness */
-      @media (max-width: 992px) {
-          .solutions-container {
-              height: auto;
-          }
-          .category-column {
-              height: 200px;
-          }
-      }
-  </style>
+    <!-- Bootstrap Icons (required for the icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
 
     <!--=====JQUERY=======-->
@@ -222,6 +38,30 @@
 
   <body class="body tg-heading-subheading animation-style3">
     <!--=====progress END=======-->
+
+
+    <!-- Floating Social Media Sidebar -->
+    <div class="social-sidebar">
+      <a href="tel:+254777011211" class="social-phone">
+          <i class="bi bi-telephone-fill"></i>
+      </a>
+      <a href="https://mw.linkedin.com/company/rengatechnologies" target="_blank" class="social-linkedin">
+          <i class="bi bi-linkedin"></i>
+      </a>
+      <!-- <a href="#" class="social-twitter">
+          <i class="bi bi-twitter-x"></i>
+      </a> -->
+      <a href="https://www.facebook.com/RengaTech" target="_blank" class="social-facebook">
+          <i class="bi bi-facebook"></i>
+      </a>
+      <!-- <a href="#" class="social-whatsapp">
+          <i class="bi bi-whatsapp"></i>
+      </a> -->
+
+      <a href="https://www.instagram.com/rengatechltd" target="_blank" class="social-facebook">
+          <i class="bi bi-instagram"></i>
+      </a>
+  </div>
 
     <div class="paginacontainer">
       <div class="progress-wrap">
@@ -299,7 +139,7 @@
                         data-translatable
                         class="list-group-item list-group-item-action"
                         href="#certifications"
-                        >Credentials // Credentials
+                        >Credentials // Crédentials
                       </a>
                     </li>
                     <li>
@@ -399,6 +239,11 @@
           <li>
             <a data-translatable href="index.html#about"
               >About Us // À propos de nous
+            </a>
+          </li>
+          <li>
+            <a data-translatable href="#certifications">
+              Credentials // Crédentials
             </a>
           </li>
           <li class="has-dropdown">
@@ -509,88 +354,125 @@
     <!--=====HERO AREA START=======-->
 
     <div
-      class="hero1"
-      style="
-        background-image: url(assets/img/bg/hero1-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
+      class="project sp"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="main-headding">
-              <span
-                class="span"
-                data-aos="zoom-in-left"
-                data-aos-duration="700"
-              >
-                <h1 data-translatable style="color: #723b97">
-                  Renga Technologies Limited // Renga Technologies Limitée
-                </h1></span
-              >
-              <h3 data-translatable class="title tg-element-title">
-                Designing, Developing and Deploying IT Solutions // Conception,
-                développement et déploiement de solutions informatiques
-                d'entreprise
-              </h3>
-              <div class="space16"></div>
-              <p data-translatable>
-                We innovate IT solutions through the synergy of international
-                experience and African insight, enabling RENGA to offer a unique
-                value proposition in the market, giving us a distinct and
-                competitive advantage. // Nous innovons les solutions
-                informatiques. La synergie de l'expérience internationale
-                combinée à l'intuition africaine permet à RENGA d'offrir une
-                proposition de valeur unique sur le marché, ce qui nous confère
-                un avantage distinct et compétitif.
-              </p>
 
-              <div class="space30"></div>
-              <div class="buttons">
-                <!-- <a class="play-btn" href="https://www.youtube.com/watch?v=kcfs1-ryKWE"><span><i class="fa-regular fa-play"></i></span> Watch Demo Video</a> -->
+      <div id="serviceCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#serviceCarousel" data-bs-slide-to="3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+
+          <!-- Company Introduction -->
+          <div class="carousel-item active" id="company-intro" style="background-image: url('assets/img/service/appdev-splash2.jpg')">
+            <div class="carousel-caption company-intro-caption text-center">
+              <div class="company-logo">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                </svg> -->
+<img
+                    src="assets/img/logo/cropped-favicon.fw_-32x32.png"
+                    alt=""
+                  />
+
               </div>
+              <h1 class="display-4 fw-bold mb-2">Reng Technologies</h1>
+              <p class="d-none d-md-block mb-4" data-translatable>We Innovate IT
+              Solutions The synergy of international experience blended with
+              African insight enables RENGA to offer unique value proposition in
+              the market which gives us a distinct and competitive advantage.
+              // Nous innovons les solutions informatiques. La synergie de
+              l'expérience internationale combinée à l'intuition africaine
+              permet à RENGA d'offrir une proposition de valeur unique sur le
+              marché, ce qui nous confère un avantage distinct et compétitif.
+
+              </p>
             </div>
           </div>
-
-          <div class="col-lg-7">
-            <div class="hero1-all-images">
-              <div class="image1">
-                <img
-                  src="assets/img/hero/infrastructure-splash.jpg"
-                  style="border-radius: 20%"
-                  alt=""
-                />
+          
+          <!-- App Development -->
+          <div class="carousel-item " style="background-image: url('assets/img/service/appdev-splash2.jpg')" id="app-dev">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                </svg>
               </div>
-              <div class="image2 reveal">
-                <img src="assets/img/hero/lady.fw_.png" alt="" />
+              <h2 data-translatable>Application Development // Développement d'applications </h2>
+              <p data-translatable class="d-none d-md-block">We specialize in
+              custom software development, delivering innovative,
+              high-performance applications designed to meet your unique
+              business needs.  // Nous nous spécialisons dans le développement
+              de logiciels personnalisés, fournissant des applications
+              innovantes et performantes conçues pour répondre aux besoins
+              uniques de votre entreprise.  </p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
+            </div>
+          </div>
+          
+          <!-- IT Consulting -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/Consultancy-Services.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M7 7V1.414a1 1 0 0 1 2 0V2h5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.8 5.6a1 1 0 0 1-.8.4H9v10H7v-5H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h5zm1 3V8H2l-.75 1L2 10h6zm0-5h6l.75-1L14 3H8v2z"/>
+                </svg>
               </div>
-              <div class="image3 shape-animaiton3">
-                <img
-                  src="assets/img/hero/hero5-image5.png"
-                  style="border-radius: 25px"
-                  alt=""
-                />
+              <h2 data-translatable>IT Consulting & Project Management // Conseil informatique et gestion de projets </h2>
+              <p data-translatable= class="d-none d-md-block">Our consulting services provide strategic insights, technology roadmaps, and tailored solutions to align IT with your business goals. With our project management expertise, we ensure seamless planning, execution, and delivery of IT initiatives—on time and within budget.  // Nos services de conseil vous offrent des analyses stratégiques, des feuilles de route technologiques et des solutions sur mesure pour aligner votre informatique sur vos objectifs commerciaux. Grâce à notre expertise en gestion de projet, nous garantissons une planification, une exécution et une livraison fluides de vos projets informatiques, dans le respect des délais et du budget impartis. </p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
+            </div>
+          </div>
+          
+          <!-- Project Management -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/ebs.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+                </svg>
               </div>
-              <div class="image4 shape-animaiton3">
-                <img
-                  src="assets/img/hero/hero6image6.png"
-                  style="border-radius: 25px"
-                  alt=""
-                />
+              <h2>Project Management</h2>
+              <p class="d-none d-md-block">Expert oversight of your technology initiatives from inception to completion. We ensure timely delivery, budget adherence, and exceptional quality outcomes.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
+            </div>
+          </div>
+          
+          <!-- Cloud Services -->
+          <div class="carousel-item" style="background-image: url('assets/img/service/Consultancy-Services.jpg')">
+            <div class="carousel-caption text-center">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M13.405 4.027a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 10H13a3 3 0 0 0 .405-5.973z"/>
+                </svg>
               </div>
-              <div class="shape1">
-                <img src="assets/img/shapes/header1-shape1.png" alt="" />
-              </div>
-              <div class="shape2">
-                <img src="assets/img/shapes/header1-shape2.png" alt="" />
-              </div>
+              <h2>Cloud Services</h2>
+              <p class="d-none d-md-block">Secure, scalable cloud solutions to modernize your infrastructure. Our services include migration, optimization, and ongoing management of your cloud environment.</p>
+              <button class="btn btn-learn-more btn-lg mt-3">Learn More</button>
             </div>
           </div>
         </div>
+        
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+
     </div>
+
+    <div class="space60"></div>
 
     <!--=====HERO AREA END=======-->
 
@@ -2756,44 +2638,6 @@
     <div class="footer1 _relative">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="single-footer-items footer-logo-area">
-              <div class="footer-logo">
-                <a href=""
-                  ><img src="assets/img/logo/Renga-Logo-FinalX1.fw_.png" alt=""
-                /></a>
-              </div>
-              <div class="space20"></div>
-              <div class="heading1">
-                <p data-translatable>
-                  RENGA focusses on offering solutions around Consulting,
-                  Mobility & Digital Transformation, Software Development, IT
-                  Infrastructure and IT Security. // RENGA vous propose des
-                  solutions autour du conseil, de la mobilité et de la
-                  transformation numérique, du développement logiciel, de
-                  l'infrastructure informatique et de la sécurité informatique.
-                </p>
-              </div>
-              <ul class="social-icon">
-                <li>
-                  <a href="https://mw.linkedin.com/company/rengatechnologies"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/RengaTech"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/rengatechltd"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
           <div class="col-lg col-md-6 col-12">
             <div class="single-footer-items">
               <h3 data-translatable>Service We Offer // Services Que Nous Offrons </h3>
@@ -2840,12 +2684,12 @@
               <h3 data-translatable>Contact Us // Contactez nous</h3>
 
               <div class="contact-box">
-                <div class="icon">
+                <!-- <div class="icon">
                   <img src="assets/img/icons/footer-location.png" alt="" />
-                </div>
+                </div> -->
                 <div class="pera">
                   <p data-translatable>
-                    Suite No.4, 2nd Floor, Mayfair Suites, Parklands Road, P. O
+                    Renga Technologies LTD, Suite No.4, 2nd Floor, Mayfair Suites, Parklands Road, P. O
                     Box 38158-00623, Nairobi, Kenya // Suites Mayfair Chemin des
                     Parcs Boite Postale 38158-00623 Nairobi Kenya
                   </p>
